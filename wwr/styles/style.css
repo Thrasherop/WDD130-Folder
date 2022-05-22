@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Rock+Salt&display=swap');
+
 :root {
     --primary1: #004f2d;
     --primary2: white;
@@ -7,6 +9,14 @@
 
 body {  
     background-color: var(--primary1);
+    font-family: Dosis, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+main section img {
+    box-sizing: border-box;
 }
 
 header {
@@ -19,6 +29,7 @@ nav a {
     text-align: center;
     color: var(--primary2);
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -41,8 +52,16 @@ footer a:hover {
     text-decoration: none;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 h4 {
     color: var(--primary2);
+}
+
+h2 {
+    margin: 0;
 }
 
 main section {
@@ -51,6 +70,8 @@ main section {
 
 footer {
     background-color: var(--primary1);
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 
@@ -62,16 +83,24 @@ footer {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 .home-title {
     color: var(--primary2);
+    font-family: "Rock salt", Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 .book, .join {
     background-color: var(--primary1);
     color: var(--primary2);
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -81,19 +110,34 @@ footer {
 
 .msg h2 {
     color: var(--primary2);
+    font-family: "Rock salt", Helvetica, sans-serif;
+    padding: 35px;
 }
 
 .msg p {
     color: var(--primary2);
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 .msg {
     background-color: var(--primary1);
+    line-height: 1.5em;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid black;
 }
 
 
 
-
+#logo_link {
+    padding-top: 5px;
+}
 
 #content {
     max-width: 1600px;
