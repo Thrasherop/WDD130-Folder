@@ -246,6 +246,67 @@ footer {
 }
 
 
+/*
+
+THE RIVERS STUFF
+
+*/
+
+
+
+.rivers-subtext {
+    background-color: blue;
+    color: white;
+    display: inline;
+}
+
+
+.river-image {
+    width: 80%;
+}
+
+
+.river-section {
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.river-title {
+    font-size: 2em;
+}
+
+.river-p {
+    font-size: .8em;
+}
+
+.book-btn{
+    background-color: var(--primary1);
+    color: var(--primary2);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+
+
+#rivers-main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+
+
+
+
+
+
 
 /*
  * THIS MUST BE THE LASSt 
