@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Playfair+Display:ital@1&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #04B5D0;
+  --secondary-color: #f2f6d0; 
+  --accent1-color: #F2F4FF;
+  --accent2-color:#E7C24F;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "IM Fell French Canon SC";
+  --paragraph-font: Lato, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(--primary-color);  /* headlines on a white background */ 
+  --headline-color-on-color: var(--accent1-color); /* headlines on a colored background */ 
+  --paragraph-color-on-white: var(--secondary-color); /* paragraph text on a white background */ 
+  --paragraph-color-on-color: var(--accent1-color); /* paragraph text on a colored background */ 
+  --paragraph-background-color: var(--primary-color)  ;
+  --nav-link-color: var(--accent1-color);
+  --nav-background-color: var(--primary-color);
+  --nav-hover-link-color: var(--primary-color);
+  --nav-hover-background-color: var(--accent1-color);
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+
+.home-nav {
+    text-align: center;
+}
+
+.home-btn {
+
+    /* Location on screen */
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+
+    /* Sizing */
+    width: 50%;
+    height: 6%;
+
+    /* Styling */
+    font-size: 2em;
+    font-family: Mansalva;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+
+    border-radius: 15px;
+
+    
+}
+
+.home-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+#home-welcome {
+    margin-top: 9%;
+    margin-bottom: 3%;
+    font-size: 3.5em;
+    text-align: center;
+    font-family: Mansalva;
+    color: var(--accent1-color);
+}
+
