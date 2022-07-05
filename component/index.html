@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <script src="scripts/index.js"></script>
+    <title>What is HTML/CSS/JS?</title>
+</head>
+<body>
+   
+  <h1 align="center">Languages of web development</h1>
+  <p> Web development has several programming languages involved: HTML, CSS, and Javascript. These languages work together to create a good looking webpage. 
+    Click on each language below to see what each one does!
+  </p>
+
+<!-- Tab links -->
+<div class="tab" >
+  <button class="tablinks" onclick="openCity(event, 'html')">html</button>
+  <button class="tablinks" onclick="openCity(event, 'css')">css</button>
+  <button class="tablinks" onclick="openCity(event, 'js')">Javascript</button>
+</div>
+
+<!-- Tab content -->
+<div id="html" class="tabcontent">
+  <h3>HTML</h3>
+  <p>HTML is the backbone of the web. It stands for "Hyper-Text Markup Language", and is responsible for putting elements onto a web page.
+    This includes images, text, and links.
+  </p>
+</div>
+
+<div id="css" class="tabcontent">
+  <h3>CSS</h3>
+  <p>Although HTML can put content on a page, it isn't very good at organizing or styling it. Due to that, web pages that only have HTML look very low-budget and 
+    are quite basic. CSS allows us to add colors and organize our page to be visually appealing and easily usable.
+  </p>
+</div>
+
+<div id="js" class="tabcontent">
+  <h3>Javascript</h3>
+  <p> While HTML and CSS can make a web page look pretty, Javascript is the only one that can actually add functionality. HTML and CSS are not exactly "programming" Languages.
+    They can tell a browser what to display, but thats it. Javascript, on the other hand, has if statements, loops, and functions. It can interact and manipulate the page 
+    based on user activity. It is the bread and butter of an interactive webpage. </p>
+</div>
+
+<!-- Click on the <span> element to close the tab -->
+
+  <div id="London" class="tabcontent">
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+    <span onclick="this.parentElement.style.display='none'">x</span>
+  </div>
+
+</body>
+</html>
