@@ -25,8 +25,13 @@
 }
 
 body {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    background-image: url("/Fantasy_Web/assets/cloudy-backgroundv6.png");
+    background-size: cover;
     margin: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 
 
@@ -60,10 +65,12 @@ body {
     display: grid;
     grid-template-columns: 1fr 2.9fr repeat(3, 1fr);
     justify-content: space-around;
+    background-color: var(--secondary-color);
+    
 }
 
 .nav-link{
-    color: var(--accent1-color);
+    color: var(--primary-color);
     text-decoration: none;
     text-align: center;
     width: 55%;
@@ -148,6 +155,7 @@ body {
     text-align: center;
     font-family: Mansalva;
     color: var(--accent1-color);
+    /* background-color: var(--secondary-color); */
 }
 
 #home-body{
@@ -235,7 +243,78 @@ body {
 }
 
 
+/*
 
+    PORTFOLIO PAGE THINGS
+
+*/
+
+.portfolio-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+ .portfolio-item {
+    width: 50%;
+    
+   
+}
+
+.portfolio-link {
+    text-decoration: none;
+    margin: 0 auto;
+    display: inline;
+    color: inherit;
+}
+
+.portfolio-thumbnail {
+    width: 25%;
+    height: 50%;
+    margin: 0 auto;
+    display: block;
+    border: 5px solid var(--secondary-color);
+    border-radius: 15px;
+}
+
+.portfolio-description{
+    font-family: var(--paragraph-font);
+    text-align: left;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    width: 75%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+.resume-section {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.resume-header {
+    font-size: 3em;
+    font-family: var(--paragraph-font);
+    color: var(--accent1-color);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.resume-img {
+    display: block;
+    margin: 0 auto;
+}
 
 
 /* 
