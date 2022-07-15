@@ -24,9 +24,11 @@
   --nav-hover-background-color: var(--accent1-color);
 }
 
+/* ("C:\\Users\\ultra\\Desktop\\Nerd Thingz\\VSCode\\WebDev (js, html,CSS)\\WDD 130 (all projects)\\WDD 130\\Fantasy_Web\\assets\\cloudy-backgroundv6.png") */
+
 body {
     /* background-color: var(--primary-color); */
-    background-image: url("/Fantasy_Web/assets/cloudy-backgroundv6.png");
+    background-image: url("https://raw.githubusercontent.com/Thrasherop/WDD130-Folder/master/Fantasy_Web/assets/cloudy-backgroundv6.png");
     background-size: cover;
     margin: 0px;
     background-repeat: no-repeat;
