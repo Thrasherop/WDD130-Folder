@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Playfair+Display:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
@@ -50,12 +51,17 @@ body {
     border-radius: 40px;
     font-size: 1.2em;
     text-align: center;
+    font-family: var(--paragraph-font);
 }
 
 .text-bubble-highlight{
-    background-color: #cfd3a5; /*var(--accent1-color);*/
+    background-color: #dcdfc3; /* #d7dbac; /*var(--accent1-color);*/
     max-width: fit-content;
     font-style: normal;
+    font-family: sans-serif;
+    /* color: var(--primary-color); */
+    /* border: 1px solid var(--accent2-color); */
+    border-radius: 3px;
 }
 
 .nav-btn:hover {
@@ -118,6 +124,16 @@ body {
 
 */
 
+.link-formatter {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.link-formatter:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
 .home-nav {
     text-align: center;
 }
@@ -153,11 +169,12 @@ body {
 #home-welcome {
     margin-top: 9%;
     margin-bottom: 3%;
-    font-size: 3.5em;
+    font-size: 3.8em;
     text-align: center;
     font-family: Mansalva;
     color: var(--accent1-color);
     /* background-color: var(--secondary-color); */
+    animation: my-bounce-anim 1.9s linear infinite;
 }
 
 #home-body{
@@ -345,4 +362,35 @@ Keyframes
     to {
         margin-top: 0%;
     }
+}
+
+@keyframes bounce-anim{
+    0%,40%,60%,80%,to{
+        transform:translateY(0)
+    }
+    50%{
+        transform:translateY(-4px)
+    }
+    70%{
+        transform:translateY(-2px)
+    }
+    90%{
+        transform:translateY(-1px)
+    }
+}
+
+@keyframes my-bounce-anim{
+
+    0% {
+        transform: translateY(2px);
+    }
+
+    50% {
+        transform: translateY(-2px);
+    }
+
+    100% {
+        transform: translateY(2px);
+    }
+
 }
